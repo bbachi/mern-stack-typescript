@@ -6,7 +6,7 @@ services:
       context: ./ui
       dockerfile: Dockerfile.dev
    ports:
-    -  4200:4200
+    -  3000:3000
    container_name: mean-ui
    networks:
     -  mean-stack-net
