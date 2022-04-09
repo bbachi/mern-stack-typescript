@@ -14,7 +14,7 @@ RUN ls
 # Stage3: Packagign the app
 FROM node:14-slim
 WORKDIR /root/
-COPY --from=ui-build /usr/src/ui/dist/ui ./ui/build
+COPY --from=ui-build /usr/src/ui/build ./ui/build
 COPY --from=api-build /usr/src/api/dist .
 RUN ls
 
